@@ -5,7 +5,7 @@ const messageEl = document.querySelector("#message");
 const winningCombos = [
     [0,1,2],
     [3,4,5],
-    [6,7,8,],
+    [6,7,8],
     [0,3,6],
     [1,4,7],
     [2,5,8],
@@ -29,7 +29,7 @@ function init (){
     turn = "X";
     winner= false;
     tie = false; 
-    console.log("int")
+    console.log("int");
     render();
 }
 
@@ -47,7 +47,7 @@ function updateBoard(){
 function updateMessage(){
     if( winner === false && tie === false){
         messageEl.textContent =  `player ${turn}`;
-    }else if(winner === false && tie === true  ){
+    }else if(winner === false && tie === true){
         messageEl.textContent = 'it is tie';
     }else{
         messageEl.textContent = `the winner is ${turn}`;
