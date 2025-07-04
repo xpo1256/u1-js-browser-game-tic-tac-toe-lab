@@ -90,9 +90,7 @@ function checkForTie(){
 function switchPlayerTurn(){
     if(winner){
         return;
-    }
-
-    if(turn === 'X'){
+    }else if(turn === 'X'){
         turn = 'O';
     }else{
         turn = 'X';
